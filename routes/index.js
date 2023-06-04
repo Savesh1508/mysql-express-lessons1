@@ -7,7 +7,7 @@ const pharmaciesRoutes = require("./pharmacies.js")
 const stockRoutes = require("./stock.js")
 const medicinesRoutes = require("./medicines.js")
 const medicineTypeRoutes = require("./medicine_type.js")
-
+const finderRoute = require("./finder.js")
 
 router.use("/regions", regionRoutes);
 
@@ -21,5 +21,6 @@ router.use("/medicines", medicinesRoutes);
 
 router.use("/medicinetype", medicineTypeRoutes);
 
+router.use("/finder", finderRoute);
 
 module.exports = router
